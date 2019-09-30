@@ -15,19 +15,19 @@ namespace Model
         protected string SecondName; 
         protected string LastName;
         protected uint age = 0;
-        public uint AgeSet
-        {
-            get { return age; }
+        //public uint AgeSet
+        //{
+        //    get { return age; }
            
-            set
-            {
-                if (uint.TryParse(value, out uint result))
-                {
-                    age = result;
-                }
-                else Console.WriteLine("Ошибка ввода возраста блэт");
-            }
-        }
+        //    set
+        //    {
+        //        if (uint.TryParse(value, out uint result))
+        //        {
+        //            age = result;
+        //        }
+        //        else Console.WriteLine("Ошибка ввода возраста блэт");
+        //    }
+        //}
         protected long phone = 0;
         public static int count = 0;
        
@@ -66,19 +66,19 @@ namespace Model
         {
             return LastName;
         }
-        ////Метод возраста
-        //public void AgeSet(string arg)
-        //{
-        //    while (true)
-        //    {
-        //        if (uint.TryParse(arg, out uint result) && arg != null && result < 150)
-        //        {
-        //            age = result;
-        //            break;
-        //        }
-        //        else Console.WriteLine("Ошибка ввода возраста");
-        //    }
-        //}
+        //Метод возраста
+        public void AgeSet(string arg)
+        {
+            while (true)
+            {
+                if (uint.TryParse(arg, out uint result) && arg != null && result < 150)
+                {
+                    age = result;
+                    break;
+                }
+                else Console.WriteLine("Ошибка ввода возраста");
+            }
+        }
         public uint AgeGet()
         {
             return age;

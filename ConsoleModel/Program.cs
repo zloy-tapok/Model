@@ -25,7 +25,7 @@ namespace ConsoleModel
                 Console.WriteLine("Введите отчество");
                 SpisokHumans[i].LastNameSet(Console.ReadLine());
                 Console.WriteLine("Введите возраст");
-                SpisokHumans[i].AgeSet = 10;
+                SpisokHumans[i].AgeSet(Console.ReadLine());
                 Console.WriteLine("Введите номер телефона");
                 SpisokHumans[i].PhoneSet(Console.ReadLine());
                 Human.count++;
