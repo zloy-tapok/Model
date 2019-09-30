@@ -69,15 +69,15 @@ namespace Model
         //Метод возраста
         public void AgeSet(string arg)
         {
-            while (true)
-            {
+           // while (true)
+         //   {
                 if (uint.TryParse(arg, out uint result) && arg != null && result < 150)
                 {
                     age = result;
-                    break;
+             //       break;
                 }
                 else Console.WriteLine("Ошибка ввода возраста");
-            }
+           // }
         }
         public uint AgeGet()
         {
